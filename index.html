@@ -1,24 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Discovery Form</title>
 
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbzk7u5NAbSXiKzGandcYoi0wJv5cdR_KI_-Lt8JDiL4afPMEJT5IFqtQDw5zI6CEz7keg/exec">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script>
-    window.location.replace("https://script.google.com/macros/s/AKfycbzk7u5NAbSXiKzGandcYoi0wJv5cdR_KI_-Lt8JDiL4afPMEJT5IFqtQDw5zI6CEz7keg/exec");
-  </script>
+<title>Event Discovery</title>
+
+<meta name="description" content="Event Management System Discovery Questionnaire">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Inter,sans-serif;
+
+background:
+radial-gradient(circle at top right,#dbeafe 0%,transparent 30%),
+radial-gradient(circle at bottom left,#eff6ff 0%,transparent 35%),
+#f8fafc;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+
+padding:30px;
+
+}
+
+.card{
+
+background:white;
+
+max-width:680px;
+width:100%;
+
+padding:60px;
+
+border-radius:28px;
+
+box-shadow:
+0 20px 60px rgba(15,23,42,.08);
+
+text-align:center;
+
+animation:fade .7s ease;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#dbeafe;
+
+color:#2563eb;
+
+font-size:13px;
+
+font-weight:600;
+
+border-radius:999px;
+
+margin-bottom:25px;
+
+letter-spacing:.5px;
+
+}
+
+h1{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#0f172a;
+
+margin-bottom:18px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+color:#475569;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+.section-title{
+
+font-size:18px;
+
+font-weight:600;
+
+margin-bottom:18px;
+
+color:#0f172a;
+
+}
+
+.features{
+
+text-align:left;
+
+max-width:360px;
+
+margin:0 auto 40px auto;
+
+}
+
+.features li{
+
+list-style:none;
+
+padding:12px 0;
+
+font-size:16px;
+
+color:#334155;
+
+}
+
+.features li::before{
+
+content:"✓";
+
+color:#22c55e;
+
+font-weight:bold;
+
+margin-right:12px;
+
+}
+
+.button{
+
+display:inline-block;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 42px;
+
+border-radius:14px;
+
+font-weight:600;
+
+font-size:18px;
+
+transition:.25s;
+
+}
+
+.button:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}
+
+.time{
+
+margin-top:28px;
+
+font-size:15px;
+
+color:#64748b;
+
+}
+
+.footer{
+
+margin-top:45px;
+
+font-size:13px;
+
+color:#94a3b8;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:#f5f5f5;">
-  <div style="text-align:center">
-    <h2>Redirecting...</h2>
-    <p>If you are not redirected automatically, click below.</p>
-    <a href="https://script.google.com/macros/s/AKfycbzk7u5NAbSXiKzGandcYoi0wJv5cdR_KI_-Lt8JDiL4afPMEJT5IFqtQDw5zI6CEz7keg/exec">
-      Open Discovery Form
-    </a>
-  </div>
+<body>
+
+<div class="card">
+
+<div class="badge">
+
+EVENT MANAGEMENT SYSTEM
+
+</div>
+
+<h1>
+
+Let's Build Your Event Experience
+
+</h1>
+
+<p class="subtitle">
+
+Thank you for your interest in working with us.
+
+<br><br>
+
+Please complete our Discovery Questionnaire to help us understand your event requirements and prepare a tailored solution, including the Technical Proposal, Project Timeline, and Commercial Quotation.
+
+</p>
+
+<div class="section-title">
+
+What You'll Get
+
+</div>
+
+<ul class="features">
+
+<li>Tailored Solution</li>
+
+<li>Technical Proposal</li>
+
+<li>Project Timeline</li>
+
+<li>Commercial Quotation</li>
+
+</ul>
+
+<a class="button"
+
+onclick="startDiscovery()">
+
+Start Discovery Questionnaire
+
+</a>
+
+<div class="time">
+
+⏱ Estimated Time: <strong>5–7 Minutes</strong>
+
+</div>
+
+<div class="footer">
+
+Powered by M.N
+
+</div>
+
+</div>
+
+<script>
+
+function startDiscovery(){
+
+document.querySelector(".button").innerHTML="Preparing your questionnaire...";
+
+setTimeout(function(){
+
+window.location.href="https://script.google.com/macros/s/AKfycbzk7u5NAbSXiKzGandcYoi0wJv5cdR_KI_-Lt8JDiL4afPMEJT5IFqtQDw5zI6CEz7keg/exec";
+
+},900);
+
+}
+
+</script>
+
 </body>
+
 </html>
