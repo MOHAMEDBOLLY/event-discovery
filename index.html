@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,12 +26,13 @@ body{
 
 font-family:Inter,sans-serif;
 
-background:#f8fafc;
+background:
+radial-gradient(circle at top right,#dbeafe 0%,transparent 30%),
+radial-gradient(circle at bottom left,#eff6ff 0%,transparent 35%),
+#f8fafc;
 
 display:flex;
-
 justify-content:center;
-
 align-items:center;
 
 min-height:100vh;
@@ -41,21 +43,21 @@ padding:30px;
 
 .card{
 
-background:#fff;
+background:white;
 
-max-width:650px;
-
+max-width:680px;
 width:100%;
 
 padding:60px;
 
-border-radius:24px;
+border-radius:28px;
 
-box-shadow:0 15px 45px rgba(0,0,0,.08);
+box-shadow:
+0 20px 60px rgba(15,23,42,.08);
 
 text-align:center;
 
-animation:fade .6s ease;
+animation:fade .7s ease;
 
 }
 
@@ -63,39 +65,57 @@ animation:fade .6s ease;
 
 display:inline-block;
 
-background:#e0edff;
-
-color:#2563eb;
-
 padding:8px 18px;
 
-border-radius:50px;
+background:#dbeafe;
+
+color:#2563eb;
 
 font-size:13px;
 
 font-weight:600;
 
+border-radius:999px;
+
 margin-bottom:25px;
+
+letter-spacing:.5px;
 
 }
 
 h1{
 
-font-size:38px;
+font-size:42px;
+
+font-weight:700;
 
 color:#0f172a;
 
-margin-bottom:15px;
+margin-bottom:18px;
 
 }
 
-p{
+.subtitle{
+
+font-size:18px;
 
 color:#475569;
 
 line-height:1.8;
 
-margin-bottom:20px;
+margin-bottom:35px;
+
+}
+
+.section-title{
+
+font-size:18px;
+
+font-weight:600;
+
+margin-bottom:18px;
+
+color:#0f172a;
 
 }
 
@@ -103,7 +123,9 @@ margin-bottom:20px;
 
 text-align:left;
 
-margin:35px 0;
+max-width:360px;
+
+margin:0 auto 40px auto;
 
 }
 
@@ -111,7 +133,9 @@ margin:35px 0;
 
 list-style:none;
 
-padding:10px 0;
+padding:12px 0;
+
+font-size:16px;
 
 color:#334155;
 
@@ -119,11 +143,13 @@ color:#334155;
 
 .features li::before{
 
-content:"✓ ";
+content:"✓";
 
 color:#22c55e;
 
 font-weight:bold;
+
+margin-right:12px;
 
 }
 
@@ -131,15 +157,13 @@ font-weight:bold;
 
 display:inline-block;
 
-margin-top:20px;
-
-padding:18px 45px;
-
 background:#2563eb;
 
-color:#fff;
+color:white;
 
 text-decoration:none;
+
+padding:18px 42px;
 
 border-radius:14px;
 
@@ -157,11 +181,23 @@ background:#1d4ed8;
 
 transform:translateY(-2px);
 
+box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}
+
+.time{
+
+margin-top:28px;
+
+font-size:15px;
+
+color:#64748b;
+
 }
 
 .footer{
 
-margin-top:40px;
+margin-top:45px;
 
 font-size:13px;
 
@@ -175,7 +211,7 @@ from{
 
 opacity:0;
 
-transform:translateY(25px);
+transform:translateY(20px);
 
 }
 
@@ -205,49 +241,76 @@ EVENT MANAGEMENT SYSTEM
 
 <h1>
 
-Project Discovery
+Let's Build Your Event Experience
 
 </h1>
 
-<p>
+<p class="subtitle">
 
 Thank you for your interest in working with us.
 
-</p>
+<br><br>
 
-<p>
-
-Please complete the Discovery Questionnaire to help us understand your requirements and prepare an accurate proposal, timeline, and quotation.
+Please complete our Discovery Questionnaire to help us understand your event requirements and prepare a tailored solution, including the Technical Proposal, Project Timeline, and Commercial Quotation.
 
 </p>
+
+<div class="section-title">
+
+What You'll Get
+
+</div>
 
 <ul class="features">
 
-<li>Project Requirements</li>
+<li>Tailored Solution</li>
 
 <li>Technical Proposal</li>
 
-<li>Commercial Quotation</li>
+<li>Project Timeline</li>
 
-<li>Estimated Timeline</li>
+<li>Commercial Quotation</li>
 
 </ul>
 
 <a class="button"
 
-href="https://script.google.com/macros/s/AKfycbzk7u5NAbSXiKzGandcYoi0wJv5cdR_KI_-Lt8JDiL4afPMEJT5IFqtQDw5zI6CEz7keg/exec">
+onclick="startDiscovery()">
 
-Start Discovery
+Start Discovery Questionnaire
 
 </a>
 
+<div class="time">
+
+⏱ Estimated Time: <strong>5–7 Minutes</strong>
+
+</div>
+
 <div class="footer">
 
-Estimated completion time: 5–10 Minutes
+Powered by M.N
 
 </div>
 
 </div>
+
+<script>
+
+function startDiscovery(){
+
+document.querySelector(".button").innerHTML="Preparing your questionnaire...";
+
+setTimeout(function(){
+
+window.location.href="https://script.google.com/macros/s/AKfycbzk7u5NAbSXiKzGandcYoi0wJv5cdR_KI_-Lt8JDiL4afPMEJT5IFqtQDw5zI6CEz7keg/exec";
+
+},900);
+
+}
+
+</script>
 
 </body>
+
 </html>
